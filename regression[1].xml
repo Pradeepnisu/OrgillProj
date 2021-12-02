@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Town &amp; Country Test Suite" parallel="classes"
+	thread-count="3" data-provider-thread-count="3">
+<parameter name="URL" value="https://9900tc.stage.cimm2.com/" />
+<parameter name="Browser" value="chrome" />
+<parameter name="RunHeadless" value="false" />
+<parameter name="Company" value="Town &amp; Country" />
+<parameter name="OS" value="Windows" />
+<parameter name="RemoteUrl" value="http://localhost:4444/wd/hub" />
+
+	<test name="Regression">
+
+	<classes>
+
+			
+			<class name="testmethods.HomePageTest"/>
+			<class name="testmethods.RegistrationModule"/>
+			<class name="testmethods.LoginModuleTest"/>
+			<class name="testmethods.ForgotPasswordModuleTest"/> 
+			<class name="testmethods.ChangePasswordTest"/> 
+            <class name="testmethods.GeneralSearch"/>
+            <class name="testmethods.AccountDashboardModuleTest" />
+            <class name="testmethods.SaveCartModuleTest" />
+            <class name="testmethods.ProductGroupModuleTest" />
+            <class name="testmethods.OrderHistoryModuleTest" />
+            <class name="testmethods.ProductListAndGridModuleTest"/>
+            <class name="testmethods.LeftMenuModuleTest"/>
+            <class name="testmethods.CategoryPagesTest"/>
+            <class name="testmethods.CompareModuleTest"/>
+            <class name="testmethods.SendThisPageModuleTest" />
+            <class name="testmethods.PricingModuleTest" />
+            <class name="testmethods.AvailabilityModuleTest" />
+            <class name="testmethods.ShoppingCartModuleTest" />
+            <class name="testmethods.GuestUserCheckoutModuleTest" />
+            <class name="testmethods.OrderConfirmationModuleTest" />
+            <class name="testmethods.FooterModule"/>
+            <class name="testmethods.HeaderModule" />
+            <class name="testmethods.LocationsModuleTest"/>
+            
+             <!-- Orgill Specific features -->
+             <class name="testmethods.AddToCartModuleTest" />
+            <class name="testmethods.MOQAndOQITest" />
+            <class name="testmethods.DataValidationTestModule"/>
+            
+            
+		</classes>
+	</test>
+</suite>
